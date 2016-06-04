@@ -1,0 +1,44 @@
+Identifier = "LuaPad"
+
+Name = {
+  English = "LuaPad",
+  French = "LuaPad",
+  German = "LuaPad",
+}
+
+NameShort = "LuaPad"
+
+Description = {
+  English = "LuaPad provides a simple in-game Lua editor and object inspector."
+}
+
+Author = "NerfedWar"
+Website = "http://www.nerfedwar.net"
+Version = "1.8"
+
+Email = "nerfed.war@gmail.com"
+
+Environment = "1.9"
+
+Embed = {
+	LibSimpleWidgets = true,
+	Inspector = true,
+}
+
+Dependencies = {
+	Inspector = {"required", "before"},
+	LibSimpleWidgets = {"required", "before"},
+}
+
+SavedVariables = {
+	LuaPad_Snippets = "account"
+}
+
+RunOnStartup = {
+	"main.lua"
+}
+
+-- X-Curse-Packaged-Version: 1.8
+-- X-Curse-Project-Name: LuaPad
+-- X-Curse-Project-ID: luapad
+-- X-Curse-Repository-ID: rift/luapad/mainline
